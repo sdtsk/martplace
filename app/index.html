@@ -1,18 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MartPlace</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
 
+    <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__logo">
+                  <a href="#">
+                      <img src="images/logo.png" alt="">
+                  </a>
+              </div>
+              <div class="header__control">
+                <a class="header__control-btn" href="#">Become a Seller</a>
+                <div class="header__control-box">
+                    <a class="header__control-alarm" href="#"><img src="images/icons/alarm.svg" alt=""></a>
+                    <a class="header__control-envelope" href="#"><img src="images/icons/envelope.svg" alt=""></a>
+                    <a class="header__control-cart" href="#"><img src="images/icons/cart.svg" alt=""></a>
+                </div>
+                <div class="header__control-account">
+                    <a class="header__control-photo" href="#" style="background-image: url('images/content/photo-profile.jpg');"></a>
+                    <div class="header__control-info">
+                        <a class="header__control-name" href="#">Taofiq Hakim</a>
+                        <a class="header__control-deposit" href="#">$20.45</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__inner-menu"></div>
+          </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-inner">
+                    <nav class="header__bottom-nav">
+                      <ul>                               
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">All products</a></li>
+                          <li><a href="#">Wordpress</a></li>
+                          <li><a href="#">Festures</a></li>
+                          <li><a href="#">Pages</a></li>
+                      </ul>
+                    </nav>
+                    <div class="header__bottom-search">
+                      <form>
+                        <input type="text" placeholder="Search product here..." required>
+                        <button type="submit">
+                          <img class="magnifier" src="images/icons/magnifier.svg" alt="">
+                        </button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <section class="title">
+      <div class="container">
+        <div class="title__inner">
+          <h1 class="title__general">Create Your Own<span></br>Digital Product Marketplace</span></h1>
+          <p class="title__text">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</p>
+          <div class="title__buttons">
+            <a href="#">View All Products</a>
+            <a href="#">Popular Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search">
+      <div class="container">
+        <div class="search__inner">
+          <form>
+            <input class="search__box" type="text" placeholder="Search your products..." required>
+            <select class="search__select" name="All Categories" id="">
+              <option value="All Categories">All Categories</option>
+              <option value="All Categories">All Categories</option>
+              <option value="All Categories">All Categories</option>
+              <option value="All Categories">All Categories</option>
+              <option value="All Categories">All Categories</option>
+            </select>
+            <button class="search__button">Search Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
-</body>
+  </body>
 </html>

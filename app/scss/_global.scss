@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: $grey;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
