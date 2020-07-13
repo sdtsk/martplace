@@ -1,5 +1,6 @@
 @import '_vars';
 @import '_global';
+@import '_fonts';
 
 
 // start header
@@ -14,8 +15,8 @@
     background-color: $bg;
 }
 .header__logo {
-        margin-left: 7px;
-    }
+    margin-left: 7px;
+}
 .header__control {
     display: flex;
     align-items: center;
@@ -203,34 +204,279 @@
     }
     &__box {
         width: 611px;
-        min-height: 53px;
         outline: none;
         border: 1px solid #dcdcdc;
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
-        padding-left: 28px;
+        padding: 17px 28px;
         font-size: 16px;
         color: #424242;
+        border-right: none;
     }
     &__select {
         width: 194px;
-        padding: 15px 21px;
+        padding: 16px 21px;
         outline: none;
         border: 1px solid #dcdcdc;
+        // border-left: none;
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
+        font-size: 16px;
         color: #555555;
+        appearance: none;
+        margin-left: -5px;
     }
     &__button {
-        padding: 17px 67px;
+        padding: 19px 67px 18px;
         background-color: $blue;
         border: none;
         border-radius: 6px;
         outline: none;
         font-size: 16px;
         color: #fff;
+        margin-left: 27px;
         &:hover{
             cursor: pointer;
         }
     }
 }
+
+// end search
+// start  advantages
+
+.advantages {
+    min-height: 645px;
+    &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+    }
+    &__item {
+        text-align: center;
+        width: 361px;
+        min-height: 403px;
+        padding: 40px 28px 50px;
+        transition: all 0.1s;
+        &:hover {
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        }
+        &-title {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: normal;
+            margin-top: 40px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 30px;
+            color: $grey;
+            font-weight: normal;
+        }
+    }
+}
+
+// end advantages
+// start slider
+
+.products {
+    min-height: 850px;
+    background-color: $bg;
+    padding: 120px 0;
+    &__title {
+        background-color: #fff;
+        border-radius: 4px;    
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding: 32.5px 30px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #000;
+            margin: 0 20px 0 0;
+        }
+        &-btn {
+            width: 110px;
+            height: 45px;
+            background-color: #7347c1;
+            border-radius: 25px;
+        }
+    }
+    &__line {
+        height: 1px;
+        width: 100%;
+        background: #ececec;
+        margin-bottom: 23px;
+    }
+    &__cost {
+        padding: 9px 19px;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 19px;
+    }
+    &__like-ammount {
+        margin: 0 19px 0 9px;
+    }
+    &__cart-ammount {
+        margin-left: 9px;
+        color: $blue;
+    }
+}
+.products__slider {
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        min-height: 450px;
+        background-color: #fff;
+        box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+        border-radius: 4px;
+        position: relative;
+    }
+    &-image {
+        width: 555px;
+        height: 100%;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+    &-dscr {
+        width: 585px;
+        padding: 40px 50px 25px;
+    }
+    &-title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    &-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    &-profile-logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    }
+    &-profile-name{
+        font-size: 15px;
+        line-height: 15px;
+        color: #000;
+        margin-right: 20px;
+    }
+    &-category-logo {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    }
+    &-category-name {
+        font-size: 15px;
+        line-height: 15px;
+        color: #7347c1;
+    }
+    &-text {
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+        margin-bottom: 35px;
+    }
+    &-links {
+        a {
+            font-size: 15px;
+            line-height: 15px;
+            background-color: #f1f3f6;
+            color: #868c96;
+            padding: 5px 17px;
+            border-radius: 15px;
+            margin-bottom: 44px;
+        }
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-box {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .slick-arrow {
+        border: none;
+        background-color: transparent;
+        outline: transparent;
+    }
+    .slick-arrow .lnr {
+        color: #fff;
+        padding: 5px;
+    }
+    .lnr-chevron-left {
+        position: absolute;
+        right: 95px;
+        top: -118px;
+    }
+    .lnr-chevron-right {
+        position: absolute;
+        right: 45px;
+        top: -118px;
+    }
+}
+// start hover slider
+.slider__image-hover {
+    width: 555px;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        font-size: 15px;
+        line-height: 15px;
+        font-weight: 500;
+        color: #fff;
+        padding: 15px 34px;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        transition: all 0.2s;
+        &:hover {
+            background-color: #fff;
+            color: $blue;
+        }
+    }
+    a + a {
+        padding: 15px 30px;
+        margin-left: 10px;
+    }
+}
+.products__slider-image-box:hover .slider__image-hover {
+    opacity: 1;
+}
+// end hover slider

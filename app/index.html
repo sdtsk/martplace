@@ -8,69 +8,105 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-
     <header class="header">
-        <div class="header__top">
-          <div class="container">
-            <div class="header__top-inner">
-              <div class="header__logo">
-                  <a href="#">
-                      <img src="images/logo.png" alt="">
-                  </a>
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__logo">
+              <a href="#">
+                <img src="images/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="header__control">
+              <a class="header__control-btn" href="#">Become a Seller</a>
+              <div class="header__control-box">
+                <a class="header__control-alarm" href="#"
+                  ><span
+                    class="lnr lnr-alarm"
+                    style="font-size: 20px; color: #7e8fa1;"
+                  ></span>
+                </a>
+                <a class="header__control-envelope" href="#"
+                  ><span
+                    class="lnr lnr-envelope"
+                    style="font-size: 20px; color: #7e8fa1;"
+                  ></span>
+                </a>
+                <a class="header__control-cart" href="#"
+                  ><span
+                    class="lnr lnr-cart"
+                    style="font-size: 20px; color: #7e8fa1;"
+                  ></span>
+                </a>
               </div>
-              <div class="header__control">
-                <a class="header__control-btn" href="#">Become a Seller</a>
-                <div class="header__control-box">
-                    <a class="header__control-alarm" href="#"><img src="images/icons/alarm.svg" alt=""></a>
-                    <a class="header__control-envelope" href="#"><img src="images/icons/envelope.svg" alt=""></a>
-                    <a class="header__control-cart" href="#"><img src="images/icons/cart.svg" alt=""></a>
-                </div>
-                <div class="header__control-account">
-                    <a class="header__control-photo" href="#" style="background-image: url('images/content/photo-profile.jpg');"></a>
-                    <div class="header__control-info">
-                        <a class="header__control-name" href="#">Taofiq Hakim</a>
-                        <a class="header__control-deposit" href="#">$20.45</a>
-                    </div>
+              <div class="header__control-account">
+                <a
+                  class="header__control-photo"
+                  href="#"
+                  style="
+                    background-image: url('images/content/photo-profile.jpg');
+                  "
+                ></a>
+                <div class="header__control-info">
+                  <a class="header__control-name" href="#">Taofiq Hakim</a>
+                  <a class="header__control-deposit" href="#">$20.45</a>
                 </div>
               </div>
             </div>
-            <div class="header__inner-menu"></div>
           </div>
         </div>
-        <div class="header__bottom">
-            <div class="container">
-                <div class="header__bottom-inner">
-                    <nav class="header__bottom-nav">
-                      <ul>                               
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">All products</a></li>
-                          <li><a href="#">Wordpress</a></li>
-                          <li><a href="#">Festures</a></li>
-                          <li><a href="#">Pages</a></li>
-                      </ul>
-                    </nav>
-                    <div class="header__bottom-search">
-                      <form>
-                        <input type="text" placeholder="Search product here..." required>
-                        <button type="submit">
-                          <img class="magnifier" src="images/icons/magnifier.svg" alt="">
-                        </button>
-                      </form>
-                    </div>
-                </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <nav class="header__bottom-nav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">All products</a></li>
+                <li><a href="#">Wordpress</a></li>
+                <li><a href="#">Festures</a></li>
+                <li><a href="#">Pages</a></li>
+              </ul>
+            </nav>
+            <div class="header__bottom-search">
+              <form>
+                <input
+                  type="text"
+                  placeholder="Search product here..."
+                  required
+                />
+                <button type="submit">
+                  <img
+                    class="magnifier"
+                    src="images/icons/magnifier.svg"
+                    alt=""
+                  />
+                </button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </header>
-    
+
     <section class="title">
       <div class="container">
         <div class="title__inner">
-          <h1 class="title__general">Create Your Own<span></br>Digital Product Marketplace</span></h1>
-          <p class="title__text">MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products</p>
+          <h1 class="title__general">
+            Create Your Own<span><br />Digital Product Marketplace</span>
+          </h1>
+          <p class="title__text">
+            MartPlace is the most powerful, & customizable template for Easy
+            Digital Downloads Products
+          </p>
           <div class="title__buttons">
             <a href="#">View All Products</a>
             <a href="#">Popular Products</a>
@@ -83,7 +119,12 @@
       <div class="container">
         <div class="search__inner">
           <form>
-            <input class="search__box" type="text" placeholder="Search your products..." required>
+            <input
+              class="search__box"
+              type="text"
+              placeholder="Search your products..."
+              required
+            />
             <select class="search__select" name="All Categories" id="">
               <option value="All Categories">All Categories</option>
               <option value="All Categories">All Categories</option>
@@ -97,8 +138,465 @@
       </div>
     </section>
 
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <a href="#" class="advantages__item">
+            <img
+              class="advantages__item-logo"
+              src="images/icons/adv-item-1.png"
+              alt=""
+            />
+            <h2 class="advantages__item-title">Best UX Research</h2>
+            <p class="advantages__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+              ut scelerisque the mattis, leo quam aliquet diam congue is laoreet
+              elit metus.
+            </p>
+          </a>
+          <a href="#" class="advantages__item">
+            <img
+              class="advantages__item-logo"
+              src="images/icons/adv-item-2.png"
+              alt=""
+            />
+            <h2 class="advantages__item-title">Fully Responsive</h2>
+            <p class="advantages__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+              ut scelerisque the mattis, leo quam aliquet diam congue is laoreet
+              elit metus.
+            </p>
+          </a>
+          <a href="#" class="advantages__item">
+            <img
+              class="advantages__item-logo"
+              src="images/icons/adv-item-3.png"
+              alt=""
+            />
+            <h2 class="advantages__item-title">Buy & Sell Easily</h2>
+            <p class="advantages__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo
+              ut scelerisque the mattis, leo quam aliquet diam congue is laoreet
+              elit metus.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="products__title">
+          <h3>Weekly Featured Products</h3>
+          <div class="products__title-btn"></div>
+        </div>
+        <div class="products__slider">
+          <div class="products__slider-box">
+            <div class="products__slider-item">
+              <div class="products__slider-image-box">
+                <div
+                  class="products__slider-image"
+                  style="
+                    background-image: url(images/content/product-slider-1.jpg);
+                  "
+                ></div>
+                <div
+                  class="slider__image-hover"
+                  style="
+                    background-image: linear-gradient(
+                      270deg,
+                      rgb(6, 116, 236) 0%,
+                      rgb(61, 94, 215) 46%,
+                      rgb(115, 71, 193) 100%
+                    );
+                  "
+                >
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="products__slider-dscr">
+                <div class="products__slider-title">
+                  One Page Resume Template
+                </div>
+                <div class="products__slider-info">
+                  <a
+                    class="products__slider-profile-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/content/photo-profile.jpg);
+                    "
+                  ></a>
+                  <a class="products__slider-profile-name" href="#">AazzTech</a>
+                  <a
+                    class="products__slider-category-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/icons/slider-wordpress.png);
+                    "
+                  ></a>
+                  <a class="products__slider-category-name" href="#"
+                    >WordPress</a
+                  >
+                </div>
+                <p class="products__slider-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue
+                  placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                  ut scelerisque the mattis, leo quam aliquet congue justo ut
+                  scelerisque.
+                </p>
+                <div class="products__slider-links">
+                  <a href="#">website</a>
+                  <a href="#">plugin</a>
+                  <a href="#">landing page</a>
+                </div>
+                <div class="products__line"></div>
+                <div class="products__slider-bottom">
+                  <div class="products__slider-bottom-box">
+                    <div class="products__cost">$10 - $50</div>
+                    <span
+                      class="lnr lnr-heart"
+                      style="font-size: 16px; color: #7347c1;"
+                    ></span>
+                    <div class="products__like-ammount">46</div>
+                    <span
+                      class="lnr lnr-cart"
+                      style="font-size: 16px; color: #0674ec;"
+                    ></span>
+                    <div class="products__cart-ammount">634</div>
+                  </div>
+                  <div class="products__rating"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__slider-box">
+            <div class="products__slider-item">
+              <div class="products__slider-image-box">
+                <div
+                  class="products__slider-image"
+                  style="
+                    background-image: url(images/content/product-slider-2.jpg);
+                  "
+                ></div>
+                <div
+                  class="slider__image-hover"
+                  style="
+                    background-image: linear-gradient(
+                      270deg,
+                      rgb(6, 116, 236) 0%,
+                      rgb(61, 94, 215) 46%,
+                      rgb(115, 71, 193) 100%
+                    );
+                  "
+                >
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="products__slider-dscr">
+                <div class="products__slider-title">
+                  Two Page Resume Template
+                </div>
+                <div class="products__slider-info">
+                  <a
+                    class="products__slider-profile-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/content/photo-profile.jpg);
+                    "
+                  ></a>
+                  <a class="products__slider-profile-name" href="#">AazzTech</a>
+                  <a
+                    class="products__slider-category-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/icons/slider-wordpress.png);
+                    "
+                  ></a>
+                  <a class="products__slider-category-name" href="#"
+                    >WordPress</a
+                  >
+                </div>
+                <p class="products__slider-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue
+                  placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                  ut scelerisque the mattis, leo quam aliquet congue justo ut
+                  scelerisque.
+                </p>
+                <div class="products__slider-links">
+                  <a href="#">website</a>
+                  <a href="#">plugin</a>
+                  <a href="#">landing page</a>
+                </div>
+                <div class="products__line"></div>
+                <div class="products__slider-bottom">
+                  <div class="products__slider-bottom-box">
+                    <div class="products__cost">$10 - $50</div>
+                    <span
+                      class="lnr lnr-heart"
+                      style="font-size: 16px; color: #7347c1;"
+                    ></span>
+                    <div class="products__like-ammount">46</div>
+                    <span
+                      class="lnr lnr-cart"
+                      style="font-size: 16px; color: #0674ec;"
+                    ></span>
+                    <div class="products__cart-ammount">634</div>
+                  </div>
+                  <div class="products__rating"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__slider-box">
+            <div class="products__slider-item">
+              <div class="products__slider-image-box">
+                <div
+                  class="products__slider-image"
+                  style="
+                    background-image: url(images/content/product-slider-3.jpg);
+                  "
+                ></div>
+                <div
+                  class="slider__image-hover"
+                  style="
+                    background-image: linear-gradient(
+                      270deg,
+                      rgb(6, 116, 236) 0%,
+                      rgb(61, 94, 215) 46%,
+                      rgb(115, 71, 193) 100%
+                    );
+                  "
+                >
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="products__slider-dscr">
+                <div class="products__slider-title">
+                  Three Page Resume Template
+                </div>
+                <div class="products__slider-info">
+                  <a
+                    class="products__slider-profile-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/content/photo-profile.jpg);
+                    "
+                  ></a>
+                  <a class="products__slider-profile-name" href="#">AazzTech</a>
+                  <a
+                    class="products__slider-category-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/icons/slider-wordpress.png);
+                    "
+                  ></a>
+                  <a class="products__slider-category-name" href="#"
+                    >WordPress</a
+                  >
+                </div>
+                <p class="products__slider-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue
+                  placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                  ut scelerisque the mattis, leo quam aliquet congue justo ut
+                  scelerisque.
+                </p>
+                <div class="products__slider-links">
+                  <a href="#">website</a>
+                  <a href="#">plugin</a>
+                  <a href="#">landing page</a>
+                </div>
+                <div class="products__line"></div>
+                <div class="products__slider-bottom">
+                  <div class="products__slider-bottom-box">
+                    <div class="products__cost">$10 - $50</div>
+                    <span
+                      class="lnr lnr-heart"
+                      style="font-size: 16px; color: #7347c1;"
+                    ></span>
+                    <div class="products__like-ammount">46</div>
+                    <span
+                      class="lnr lnr-cart"
+                      style="font-size: 16px; color: #0674ec;"
+                    ></span>
+                    <div class="products__cart-ammount">634</div>
+                  </div>
+                  <div class="products__rating"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__slider-box">
+            <div class="products__slider-item">
+              <div class="products__slider-image-box">
+                <div
+                  class="products__slider-image"
+                  style="
+                    background-image: url(images/content/product-slider-4.jpg);
+                  "
+                ></div>
+                <div
+                  class="slider__image-hover"
+                  style="
+                    background-image: linear-gradient(
+                      270deg,
+                      rgb(6, 116, 236) 0%,
+                      rgb(61, 94, 215) 46%,
+                      rgb(115, 71, 193) 100%
+                    );
+                  "
+                >
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="products__slider-dscr">
+                <div class="products__slider-title">
+                  Four Page Resume Template
+                </div>
+                <div class="products__slider-info">
+                  <a
+                    class="products__slider-profile-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/content/photo-profile.jpg);
+                    "
+                  ></a>
+                  <a class="products__slider-profile-name" href="#">AazzTech</a>
+                  <a
+                    class="products__slider-category-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/icons/slider-wordpress.png);
+                    "
+                  ></a>
+                  <a class="products__slider-category-name" href="#"
+                    >WordPress</a
+                  >
+                </div>
+                <p class="products__slider-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue
+                  placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                  ut scelerisque the mattis, leo quam aliquet congue justo ut
+                  scelerisque.
+                </p>
+                <div class="products__slider-links">
+                  <a href="#">website</a>
+                  <a href="#">plugin</a>
+                  <a href="#">landing page</a>
+                </div>
+                <div class="products__line"></div>
+                <div class="products__slider-bottom">
+                  <div class="products__slider-bottom-box">
+                    <div class="products__cost">$10 - $50</div>
+                    <span
+                      class="lnr lnr-heart"
+                      style="font-size: 16px; color: #7347c1;"
+                    ></span>
+                    <div class="products__like-ammount">46</div>
+                    <span
+                      class="lnr lnr-cart"
+                      style="font-size: 16px; color: #0674ec;"
+                    ></span>
+                    <div class="products__cart-ammount">634</div>
+                  </div>
+                  <div class="products__rating"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__slider-box">
+            <div class="products__slider-item">
+              <div class="products__slider-image-box">
+                <div
+                  class="products__slider-image"
+                  style="
+                    background-image: url(images/content/product-slider-5.jpg);
+                  "
+                ></div>
+                <div
+                  class="slider__image-hover"
+                  style="
+                    background-image: linear-gradient(
+                      270deg,
+                      rgb(6, 116, 236) 0%,
+                      rgb(61, 94, 215) 46%,
+                      rgb(115, 71, 193) 100%
+                    );
+                  "
+                >
+                  <a href="#">More Info</a>
+                  <a href="#">Live Demo</a>
+                </div>
+              </div>
+              <div class="products__slider-dscr">
+                <div class="products__slider-title">
+                  Five Page Resume Template
+                </div>
+                <div class="products__slider-info">
+                  <a
+                    class="products__slider-profile-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/content/photo-profile.jpg);
+                    "
+                  ></a>
+                  <a class="products__slider-profile-name" href="#">AazzTech</a>
+                  <a
+                    class="products__slider-category-logo"
+                    href="#"
+                    style="
+                      background-image: url(images/icons/slider-wordpress.png);
+                    "
+                  ></a>
+                  <a class="products__slider-category-name" href="#"
+                    >WordPress</a
+                  >
+                </div>
+                <p class="products__slider-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra,
+                  justo ut scelerisque the mattis, leo quam aliquet congue
+                  placerat mi id nisi interdum mollis. Praesent pharetra, justo
+                  ut scelerisque the mattis, leo quam aliquet congue justo ut
+                  scelerisque.
+                </p>
+                <div class="products__slider-links">
+                  <a href="#">website</a>
+                  <a href="#">plugin</a>
+                  <a href="#">landing page</a>
+                </div>
+                <div class="products__line"></div>
+                <div class="products__slider-bottom">
+                  <div class="products__slider-bottom-box">
+                    <div class="products__cost">$10 - $50</div>
+                    <span
+                      class="lnr lnr-heart"
+                      style="font-size: 16px; color: #7347c1;"
+                    ></span>
+                    <div class="products__like-ammount">46</div>
+                    <span
+                      class="lnr lnr-cart"
+                      style="font-size: 16px; color: #0674ec;"
+                    ></span>
+                    <div class="products__cart-ammount">634</div>
+                  </div>
+                  <div class="products__rating"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
