@@ -34,6 +34,30 @@
         min-width: 120px;
         margin-left: 50px;
     }
+    &-alarm {
+        &::before {
+            content: '\e858';
+            color: #7e8fa1;
+            font-size: 20px;
+            font-family: 'Linearicons-Free';
+        }
+    }
+    &-envelope {
+        &::before {
+            content: '\e818';
+            color: #7e8fa1;
+            font-size: 20px;
+            font-family: 'Linearicons-Free';
+        }
+    }
+    &-cart {
+        &::before {
+            content: '\e82e';
+            color: #7e8fa1;
+            font-size: 20px;
+            font-family: 'Linearicons-Free';
+        }
+    }
     &-photo {
         display: inline-block;
         width: 50px;
@@ -107,17 +131,14 @@
             background-color: $blue;
             border: none;
             border-radius: 25px;
+            &::before {
+                content: '\e86f';
+                color: #fff;
+                font-size: 15px;
+                font-family: 'Linearicons-Free';
+            }
             &:hover{
                 cursor: pointer;
-            }
-            img {
-                width: 16px;
-                height: 16px;
-            }
-            .magnifier {
-                position: absolute;
-                top: 15px;
-                left: 27px;
             }
         }
     }
@@ -173,6 +194,7 @@
 
 .search {
     &__inner {
+        padding: 35px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -187,7 +209,7 @@
             position: absolute;
             content: '';
             width: 1110px;
-            height: 40px;
+            height: 20px;
             background-color: rgba(255, 255, 255, .5);
             top: -15px;
             border-radius: 6px;
@@ -196,7 +218,7 @@
             position: absolute;
             content: '';
             width: 1080px;
-            height: 40px;
+            height: 35px;
             background-color: rgba(255, 255, 255, .5);
             top: -30px;
             border-radius: 6px;
@@ -305,7 +327,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h3 {
+        &-name {
             font-size: 30px;
             line-height: 30px;
             font-weight: 400;
@@ -355,11 +377,29 @@
         margin-right: 19px;
     }
     &__like-ammount {
-        margin: 0 19px 0 9px;
+        margin: 0 17px 0 26px;
+        position: relative;
+        &::before {
+            content: '\e813';
+            font-size: 15px;
+            color: #7347c1;
+            font-family: 'Linearicons-Free';
+            position: absolute;
+            left: -23px;
+        }
     }
     &__cart-ammount {
-        margin-left: 9px;
+        margin-left: 25px;
         color: $blue;
+        position: relative;
+        &::before {
+            content: '\e82e';
+            font-size: 15px;
+            color: $blue;
+            font-family: 'Linearicons-Free';
+            position: absolute;
+            left: -23px;
+        }
     }
 }
 .products__slider {
@@ -390,7 +430,7 @@
         line-height: 24px;
         font-weight: 500;
         color: #000;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
     }
     &-info {
         display: flex;
@@ -510,7 +550,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h3 {
+        &-name {
             font-size: 30px;
             line-height: 30px;
             font-weight: 400;
@@ -537,12 +577,12 @@
             }
         }
         &-drop-down {
-            min-width: 183px;
+            width: 183px;
             height: 179px;
             background-color: #fff;
             border-radius: 3px;
             box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
-            padding: 27px;
+            padding: 27px 27px 17px;
             position: absolute;
             left: -70px;
             top: 46px;
@@ -559,6 +599,7 @@
                 }
             }
             button {
+                text-align: left;
                 border: none;
                 outline: transparent;
                 background-color: #fff;
@@ -581,7 +622,7 @@
         background-color: #fff;
         border-radius: 4px;
         box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
-        padding: 32.5px 30px;
+        padding: 32.5px 30px 22.5px;
         margin-bottom: 50px;
         button {
             font-size: 15px;
@@ -594,6 +635,7 @@
             border-radius: 25px;
             outline: none;
             transition: all 0.2s;
+            margin-bottom: 10px;
             &:hover {
                 background-color: $blue;
                 color: #fff;
@@ -639,7 +681,7 @@
         line-height: 20px;
         font-weight: 500;
         color: #000;
-        margin-bottom: 30px;
+        margin: 0 0 30px;
     }
     &-info {
         display: flex;
@@ -705,15 +747,33 @@
             margin-right: 19px;
         }
         &-like-ammount {
-            margin: 0 10px 0 9px;
+            margin: 0 10px 0 22px;
+            position: relative;
+            &::before {
+                content: '\e813';
+                font-size: 15px;
+                color: #7347c1;
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                left: -24px;
+            }
         }
         &-rating {
             width: 80px;
             margin-right: 28px;
         }
         &-cart-ammount {
-            margin-left: 9px;
+            margin-left: 45px;
             color: $blue;
+            position: relative;
+            &::before {
+                content: '\e82e';
+                font-size: 15px;
+                color: $blue;
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                left: -24px;
+            }
         }
     }
 }
@@ -796,7 +856,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h3 {
+        &-name {
             font-size: 30px;
             line-height: 30px;
             font-weight: 400;
@@ -855,7 +915,7 @@
         line-height: 20px;
         font-weight: 500;
         color: #000;
-        margin-bottom: 30px;
+        margin: 0 0 30px;
     }
     &-info {
         display: flex;
@@ -921,15 +981,33 @@
             margin-right: 19px;
         }
         &-like-ammount {
-            margin: 0 10px 0 9px;
+            margin: 0 10px 0 22px;
+            position: relative;
+            &::before {
+                content: '\e813';
+                font-size: 15px;
+                color: #7347c1;
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                left: -24px;
+            }
         }
         &-rating {
             width: 80px;
             margin-right: 28px;
         }
         &-cart-ammount {
-            margin-left: 9px;
+            margin-left: 45px;
             color: $blue;
+            position: relative;
+            &::before {
+                content: '\e82e';
+                font-size: 15px;
+                color: $blue;
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                left: -24px;
+            }
         }
     }
 }
@@ -971,4 +1049,236 @@
 .followers__item:hover .followers__item-image-hover {
     opacity: 1;
 }
+
 //end followers
+// start statistics
+
+.statistics {
+    min-height: 350px;
+    background-color: #212225;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 95px 3px;
+    }
+    &__item {
+        text-align: center;
+        &-bag{
+            &::before {
+                content: '\e84c';
+                font-size: 48px;
+                font-family: 'Linearicons-Free';
+            }
+        }
+        &-cloud{
+            &::before {
+                content: '\e80b';
+                font-size: 48px;
+                font-family: 'Linearicons-Free';
+            }
+        }
+        &-smile {
+            &::before {
+                content: '\e854';
+                font-size: 48px;
+                font-family: 'Linearicons-Free';
+            }
+        }
+        &-people {
+            &::before {
+                content: '\e82b';
+                font-size: 48px;
+                font-family: 'Linearicons-Free';
+            }           
+        }
+        &-number {
+            font-size: 36px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        &-name {
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    .item-color-one {
+        color: #feb71d;
+    }
+    .item-color-two {
+        color: #58c9e9;
+    }
+    .item-color-three {
+        color: #77de51;
+    }
+    .item-color-four {
+        color: #ff6a6d;
+    }
+}
+
+// end statistics
+// start benefits
+
+.benefits {
+    min-height: 1185px;
+    padding: 120px 0;
+    counter-reset: benefits;
+    &__title {
+        text-align: center;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #000;
+        margin: 0 0 26px;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        max-width: 680px;
+        margin: 0 auto 60px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+    }
+    &__inner {
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    &__item {
+        width: 360px;
+        min-height: 375px;
+        padding: 50px 34px 60px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        &::before {
+            position: absolute;
+            counter-increment: benefits;
+            content: '0' counter(benefits);
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 48px;
+            color: rgba(#5c87f8,.2);
+            left: 20px;
+            top: 20px;
+        }
+        &-icon {
+            margin-bottom: 35px;
+        }
+        &-title {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 25px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    &__icon-1 {
+        &::before {
+            content: '\e822';
+            font-size: 60px;
+            color: $blue;
+            font-family: 'Linearicons-Free';
+        }
+    }
+    &__icon-2 {
+        &::before {
+            content: '\e803';
+            font-size: 60px;
+            color: #7f4ec2;
+            font-family: 'Linearicons-Free';
+        }
+    }
+    &__icon-3 {
+        &::before {
+            content: '\e80f';
+            font-size: 60px;
+            color: #77de51;
+            font-family: 'Linearicons-Free';
+        }
+    }
+    &__icon-4 {
+        &::before {
+            content: '\e843';
+            font-size: 60px;
+            color: #feb71d;
+            font-family: 'Linearicons-Free';
+        }
+    }
+    &__icon-5 {
+        &::before {
+            content: '\e849';
+            font-size: 60px;
+            color: #58c9e9;
+            font-family: 'Linearicons-Free';
+        }
+    }
+    &__icon-6 {
+        &::before {
+            content: '\e831';
+            font-size: 60px;
+            color: #ff6a6d;
+            font-family: 'Linearicons-Free';
+        }
+    }
+}
+
+// end benefits
+// start actions
+
+.actions {
+    min-height: 560px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(270deg, rgba(115,71,193,1) 50%, rgba(6,116,236,1) 50%);
+    }
+    &__item {
+        width: 50%;
+        text-align: center;
+        padding: 100px 190px;
+        color: #fff;
+        &-blue {
+            background-image: url(../images/waves-blue.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &-violet {
+            background-image: url(../images/waves-violet.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    &__image {
+        margin-bottom: 50px;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 45px;
+    }
+    &__link {
+        padding: 18px 25px;
+        border-radius: 30px;
+        background-color: #fff;
+        color: $blue;
+        &-violet {
+            color: #7347c1;
+        }
+    }
+}

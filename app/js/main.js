@@ -4,7 +4,8 @@ $(function(){
         starWidth: "15px",
         ratedFill: "#ffc000",
         rating: 4.5,
-        readOnly: true
+        readOnly: true,
+        fullStar: false
     });
 
     $(".new-products__item-bottom-rating").rateYo({
