@@ -36,6 +36,13 @@ $(function(){
         prevArrow: '<button class="slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button class="slick-prev"><span class="lnr lnr-chevron-right"></span></button>'
     });
+    
+    $('.reviews__slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false
+    });
 
     var mixer = mixitup('.new-products__box');
     

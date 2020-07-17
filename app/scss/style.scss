@@ -1282,3 +1282,211 @@
         }
     }
 }
+
+// end actions 
+// start reviews
+
+.reviews {
+    min-height: 840px;
+    padding: 120px 0;
+    text-align: center;
+    &__title {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #000;
+        margin: 0 0 26px;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        max-width: 680px;
+        margin: 0 auto 60px;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+    }
+    &-link {
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 20px 35px;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 30px;
+    }
+}
+.reviews__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    &-item {
+        max-width: 555px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 45px 37px;
+        text-align: left;
+        border-left: 1px solid $blue;
+        position: relative;
+        margin-right: 29px;
+        &::after {
+            position: absolute;
+            content: '\e83f';
+            font-size: 60px;
+            color: #e8e8e8;
+            font-family: 'Linearicons-Free';
+            right: 40px;
+            top: 50px;
+        }
+    }
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    &-photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+    }
+    &-name {
+        font-size: 20px;
+        margin-bottom: 13px;
+        &-box {
+            width: 280px;
+        }
+    }
+    &-text {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0;
+    }
+}
+
+// end reviews 
+// strart news 
+
+.news {
+    min-height: 840px;
+    padding: 120px 0;
+    text-align: center;
+    background-color: #eff1f5;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #000;
+        margin: 0 0 26px;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        max-width: 680px;
+        margin: 0 auto 60px;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey;
+    }
+}
+.news__item {
+    width: 361px;
+    min-height: 475px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: left;
+    &-photo {
+        width: 100%;
+        height: 230px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    &-box {
+        padding: 30px;
+        border-bottom: 1px solid #ececec;
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 30px;
+    }
+    &-text {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    &-down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 28px;
+        font-size: 15px;
+        color: #999;
+        &-box {
+            width: 50%;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            border-left: 1px solid #ececec;
+            align-items: center;
+            padding: 13px 0 13px 20px;
+        }
+    }
+    &-date {
+        width: 50%;
+        padding-left: 25px;
+        position: relative;
+        &::before {
+            content: '\e864';
+            font-size: 15px;
+            color: $blue;
+            font-family: 'Linearicons-Free';
+            position: absolute;
+            left: 3px;
+        }
+    }
+    &-comments {
+        padding-left: 26px;
+        position: relative;
+        &::before {
+            content: '\e83f';
+            font-size: 15px;
+            color: #999;
+            font-family: 'Linearicons-Free';
+            position: absolute;
+            left: 3px;
+        }
+    }
+    &-viewers {
+        padding-left: 26px;
+        position: relative;
+        &::before {
+            content: '\e81b';
+            font-size: 15px;
+            color: #999;
+            font-family: 'Linearicons-Free';
+            position: absolute;
+            left: 3px;
+        }
+    }
+}
+
+// end news 
