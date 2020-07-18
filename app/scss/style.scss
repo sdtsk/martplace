@@ -1489,4 +1489,66 @@
     }
 }
 
-// end news 
+// end news
+// start support
+
+.support {
+    min-height: 297px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        width: 50%;
+        padding: 61px 100px;
+        text-align: center;
+        &-image {
+            margin-bottom: 30px;
+        }
+        &-text {
+            font-size: 24px;
+            color: #000;
+            span {
+                color: $blue;
+            }
+        }
+        & + .support__item {
+            border-left: 1px solid #e8eaf3;
+        }
+    }
+}
+
+// end support
+// start join
+
+.join {
+    min-height: 400px;
+    text-align: center;
+    background-image: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    &__inner {
+        padding: 110px 0;
+    }
+    &__title {
+        font-size: 36px;
+        font-weight: 400;
+        color: #fff;
+        margin: 0 0 20px;
+    }
+    &__text {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    &__link {
+        font-size: 16px;
+        color: $blue;
+        padding: 20px 50px;
+        background-color: #ffffff;
+        border-radius: 30px;
+    }
+}
+
+// end join
+// start footer
+
