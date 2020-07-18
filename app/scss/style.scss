@@ -1552,3 +1552,151 @@
 // end join
 // start footer
 
+.footer {
+    font-size: 15px;
+    color: #ababab;
+    background-color: #262b30;
+    a {
+        color: #ababab;
+    }
+    &__logo {
+        margin-bottom: 21px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 110px 0 130px;
+    }
+    &__col-first {
+        max-width: 280px;
+        margin-right: 75px;
+    }
+    &__text-last {
+        line-height: 24px;
+        margin-bottom: 35px;
+    }
+    &__col {
+        min-width: 160px;
+        &-title {
+            font-size: 18px;
+            color: #fff;
+            margin: 13px 0 34px;
+        }
+        &-text {
+        line-height: 24px;
+        margin-bottom: 33px;
+        }
+        &-phone {
+            margin-bottom: 23px;
+            padding-left: 30px;
+            position: relative;
+            &::before {
+                content: "\e830";
+                font-size: 16px;
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                left: 0;
+            }
+        }
+        &-mail {
+            margin-bottom: 23px;
+            padding-left: 30px;
+            position: relative;
+            &::before {
+                content: "\e818";
+                font-size: 16px;
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                left: 0;
+            }
+        }
+        &-address {
+            padding-left: 30px;
+            line-height: 26px;
+            position: relative;
+            &::before {
+                content: "\e833";
+                font-size: 16px;
+                font-family: 'Linearicons-Free';
+                position: absolute;
+                left: 0;
+                top: 15px;
+            }
+        }
+        li {
+            margin-bottom: 18px;
+        }
+        &-second {
+            margin-right: 80px;
+        }
+        &-third {
+            margin-right: 35px;
+        }
+        form {
+            max-height: 50px;
+            position: relative;
+            margin-bottom: 48px;
+            input {
+                min-height: 50px;
+                width: 349px;
+                border-radius: 25px;
+                border: none;
+                padding: 0 129px 0 31px;
+                outline: none;
+            }
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 110px;
+                height: 50px;
+                background-color: $blue;
+                border: none;
+                border-radius: 25px;
+                color: #fff;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.footer__copy {
+    min-height: 90px;
+    text-align: center;
+    background-color: #192027;
+    padding: 40px;
+    a {
+        color: #fff;
+    }
+}
+.footer__links {
+    a {
+        width: 43px;
+        height: 43px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 41px;
+        margin: 0 11px 11px 0;
+    }
+}
+.icon-facebook {
+    background-color: #395799;
+}
+.icon-twitter {
+    background-color: #19b2f5;
+}
+.icon-google {
+    background-color: #f05b44;
+}
+.icon-pinterest {
+    background-color: #9c0c1c;
+}
+.icon-linkedin2 {
+    background-color: #0da6be;
+}
+.icon-pinterest {
+    background-color: #ea4c89;
+}
