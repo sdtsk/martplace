@@ -46,3 +46,34 @@ li{
     padding: 0 15px;
 }
 
+.breadcrumbs {
+    &__list {
+        li {
+            display: inline-block;
+            position: relative;
+            a,
+            span {
+                font-size: 15px;
+                line-height: 15px;
+                font-weight: 400;
+                color: #fff;
+            }
+            & + li {
+                padding-left: 24px;
+                &::before {
+                    position: absolute;
+                    content: '/';
+                    font-size: 15px;
+                    color: #fff;
+                    left: 7px;
+                }
+            }
+            &:last-child {
+                a,
+                span {
+                    color: #bfcad7;
+                }
+            }
+        }
+    }
+}

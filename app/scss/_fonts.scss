@@ -25,6 +25,14 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
+  
+
+.icon-th:before {
+	content: "\f00a";
+  }
+  .icon-th-list:before {
+	content: "\f00b";
+  }
   .icon-dribbble:before {
 	content: "\f17d";
   }
@@ -43,6 +51,7 @@
   .icon-pinterest:before {
 	content: "\ead1";
   }
+  
   
 
 @font-face {

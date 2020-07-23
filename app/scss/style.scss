@@ -33,8 +33,25 @@
         justify-content: space-between;
         min-width: 120px;
         margin-left: 50px;
+        font-size: 14px;
+        font-weight: 500;
     }
     &-alarm {
+        position: relative;
+        span {
+            position: absolute;
+            left: 7px;
+            top: -14px;
+            color: #fff;
+            padding: 3px;
+            border-radius: 50%;
+            background-color: #ff6a6c;
+            line-height: 16px;
+            display: inline-block;
+            min-width: 22px;
+            min-height: 22px;
+            text-align: center;
+        }
         &::before {
             content: '\e858';
             color: #7e8fa1;
@@ -43,6 +60,21 @@
         }
     }
     &-envelope {
+        position: relative;
+        span {
+            position: absolute;
+            left: 9px;
+            top: -14px;
+            color: #fff;
+            padding: 3px;
+            border-radius: 50%;
+            background-color: #62d03b;
+            line-height: 16px;
+            display: inline-block;
+            min-width: 22px;
+            min-height: 22px;
+            text-align: center;
+        }
         &::before {
             content: '\e818';
             color: #7e8fa1;
@@ -51,6 +83,21 @@
         }
     }
     &-cart {
+        position: relative;
+        span {
+            position: absolute;
+            left: 12px;
+            top: -14px;
+            color: #fff;
+            padding: 3px;
+            border-radius: 50%;
+            background-color: $blue;
+            line-height: 16px;
+            display: inline-block;
+            min-width: 22px;
+            min-height: 22px;
+            text-align: center;
+        }
         &::before {
             content: '\e82e';
             color: #7e8fa1;
@@ -99,14 +146,15 @@
 .header__bottom {
     &-nav {
         li {
-        display: inline-block;
-        margin-right: 34px;
+            display: inline-block;
+            margin-right: 34px;
         }
-        a {
-        font-size: 15px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #333;
+        a,
+        span {
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #333;
         }
     }
     &-search {
@@ -652,7 +700,7 @@
     }
     &__box {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 28px;
     }
@@ -1048,6 +1096,12 @@
 }
 .followers__item:hover .followers__item-image-hover {
     opacity: 1;
+}
+.followers__slider {
+    width: 1167px;
+    .slick-list.draggable {
+        // width: 1158px;
+    }
 }
 
 //end followers
@@ -1556,7 +1610,8 @@
     font-size: 15px;
     color: #ababab;
     background-color: #262b30;
-    a {
+    a,
+    span {
         color: #ababab;
     }
     &__logo {
@@ -1632,31 +1687,33 @@
         &-third {
             margin-right: 35px;
         }
-        form {
-            max-height: 50px;
-            position: relative;
-            margin-bottom: 48px;
-            input {
-                min-height: 50px;
-                width: 349px;
-                border-radius: 25px;
-                border: none;
-                padding: 0 129px 0 31px;
-                outline: none;
-            }
-            button {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 110px;
-                height: 50px;
-                background-color: $blue;
-                border: none;
-                border-radius: 25px;
-                color: #fff;
-                &:hover{
-                    cursor: pointer;
-                }
+    }
+}
+.footer__col-fourth {
+    form {
+        max-height: 50px;
+        position: relative;
+        margin-bottom: 48px;
+        input {
+            min-height: 50px;
+            width: 349px;
+            border-radius: 25px;
+            border: none;
+            padding: 0 129px 0 31px;
+            outline: none;
+        }
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 110px;
+            height: 50px;
+            background-color: $blue;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            &:hover{
+                cursor: pointer;
             }
         }
     }
@@ -1666,7 +1723,8 @@
     text-align: center;
     background-color: #192027;
     padding: 40px;
-    a {
+    a,
+    span {
         color: #fff;
     }
 }
@@ -1678,7 +1736,7 @@
         color: #fff;
         border-radius: 50%;
         text-align: center;
-        line-height: 41px;
+        line-height: 43px;
         margin: 0 11px 11px 0;
     }
 }
@@ -1699,4 +1757,161 @@
 }
 .icon-pinterest {
     background-color: #ea4c89;
+}
+
+// end footer 
+// start category page 
+
+.global-search {
+    background-image: linear-gradient( 270deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+    min-height: 281px;
+    text-align: center;
+    &__inner {
+        padding: 85px 0 30px;
+    }
+    &__title {
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #fff;
+        margin: 0 0 30px;
+        & span {
+            font-weight: 500;
+        }
+    }
+    &__input {
+        form {
+            max-height: 55px;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 35px;
+            input {
+                min-height: 55px;
+                width: 555px;
+                border-radius: 30px;
+                border: none;
+                padding: 0 140px 0 30px;
+                color: #898f96;
+                outline: none;
+            }
+            button {
+                position: absolute;
+                right: -1px;
+                width: 110px;
+                height: 55px;
+                background-color: $blue;
+                border: none;
+                border-radius: 30px;
+                outline: none;
+                color: #fff;
+                font-size: 15px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.category-menu {
+    min-height: 100px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+    }
+.category-menu__links {
+        li {
+            display: inline-block;
+            & + li {
+                padding-left: 38px;
+            }
+        }
+        a,
+        span {
+            font-size: 16px;
+            color: $grey;
+        }
+        .active {
+            font-size: 16px;
+            color: $blue;
+        }
+    }
+}
+.category-menu__sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        margin-left: 25px;
+    }
+}
+.category-menu__select-box {
+    position: relative;
+    &.before {
+        &::before {
+            position: absolute;
+            left: 18px;
+            top: 16px;
+            content: "Price :";
+            font-size: 14px;
+            color: $grey;
+        }
+    }
+    select {
+        width: 220px;
+        padding: 14px 46px 16px 20px;
+        outline: transparent;
+        border: 1px solid #dcdcdc;
+        border-radius: 3px;
+        font-size: 14px;
+        color: #747b86;
+        appearance: none;
+    }
+    .price {
+        padding: 14px 46px 16px 55px;
+    }
+    &::after {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        content: "\e874";
+        font-family: 'Linearicons-Free';
+        font-size: 10px;
+        color: $grey;
+    }
+}
+.category-menu__buttons {
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    padding: 16px 20px 10px;
+    button {
+        border: none;
+        outline: none;
+        background-color: #fff;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .icon-th {
+        margin-right: 10px;
+        &::before {
+            font-size: 20px;
+            color: #dadcdf; 
+        }
+    }
+    .icon-th-list {
+        &::before {
+            font-size: 20px;
+            color: #dadcdf; 
+        }
+    }
+    .current {
+        &::before {
+            font-size: 20px;
+            color: $blue; 
+        }
+    }
 }
