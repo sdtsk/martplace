@@ -38,6 +38,14 @@ $(function(){
         spacing: '5px'
     });
 
+    $(".statistics-rating").rateYo({
+        starWidth: "16px",
+        ratedFill: "#ffc000",
+        rating: 4.5,
+        readOnly: true,
+        spacing: '5px'
+    });
+
     
     $('.products__slider').slick({
         appendArrows: $('.products__title-btn'),
@@ -99,6 +107,15 @@ $(function(){
         $('.icon-th-list').removeClass('current'),
         $('.icon-th').addClass('current');
     });
+
+    $('.tabs-wrapper .tab').on('click', function(event) {
+        var id = $(this).attr('data-id');
+            $('.tabs-wrapper').find('.tab-item').removeClass('active-tab').hide();
+            $('.tabs-wrapper .tabs').find('.tab').removeClass('active');
+            $(this).addClass('active');
+            $('#'+id).addClass('active-tab').fadeIn();
+            return false;
+        });
 
 
 
