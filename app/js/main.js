@@ -117,8 +117,31 @@ $(function(){
             return false;
         });
 
+    $('.favorites-filter').on('click', function(){
+        $('.favorites-filter__drop-down').slideToggle();
+    });
 
 
-    var mixer = mixitup('.new-products__box');
+    $('.favorites-list').on('click', function(){
+        $('.new-products__item').addClass('list'),
+        $('.favorites-list').addClass('current'),
+        $('.favorites-grid').removeClass('current');
+    });
+
+    $('.favorites-grid').on('click', function(){
+        $('.new-products__item').removeClass('list'),
+        $('.favorites-list').removeClass('current'),
+        $('.favorites-grid').addClass('current');
+    });
+
+
 
 });
+
+if ($('.favorites__item-box').length) {
+    var mixer = mixitup('.favorites__item-box');
+};
+
+if ($('.new-products__box').length) {
+    var mixer = mixitup('.new-products__box');
+};

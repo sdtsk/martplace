@@ -197,7 +197,7 @@
 
 .title {
     min-height: 725px;
-    background-color: #2c4fd1;
+    background-image: linear-gradient( 270deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);
     color: #f3f3f8;
     &__inner {
         text-align: center;
@@ -609,7 +609,7 @@
             font-size: 16px;
             line-height: 16px;
             color: #747b86;
-            margin-right: 30px;
+            padding-right: 30px;
             position: relative;
             &::after {
                 content: '';
@@ -622,6 +622,9 @@
                 left: 75px;
                 top: 0;
                 padding: 10px;
+            }
+            &:hover {
+                cursor: pointer;
             }
         }
         &-drop-down {
@@ -660,6 +663,10 @@
                     cursor: pointer;
                 }
                 &:focus {
+                    color: $blue;
+                    cursor: pointer;
+                }
+                &:active {
                     color: $blue;
                     cursor: pointer;
                 }
@@ -831,13 +838,15 @@
 .new-products__bottom-btn {
     display: block;
     margin: 0 auto;
+    max-width: 190px;
+    text-align: center;
     font-size: 16px;
     line-height: 16px;
     padding: 20px 30px;
     border: none;
     background-color: $blue;
     color: #fff;
-    border-radius: 25px;
+    border-radius: 30px;
     outline: transparent;
     &:hover {
         text-shadow: 0px 0px 1px #fff;
@@ -2069,6 +2078,7 @@
     margin-bottom: 30px;
     position: relative;
     background-color: #fff;
+    transition: all 0.3s;
     &-image {
         width: 265px;
         height: 160px;
@@ -2077,6 +2087,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        transition: all 0.3s;
     }
     &-dscr {
         padding: 20px 20px 15px;
@@ -2313,6 +2324,7 @@
 .category__page-products__item.list {
     width: 100%;
     min-height: 210px;
+    // transition: all 0.5s;
     .category__page-products__item-image {
         float: left;
         width: 230px;
@@ -2902,5 +2914,320 @@
     }
 }
 
-
 //end single-product-page
+
+//start favorites page
+
+.favorites-menu {
+    min-height: 100px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    .category-menu__inner {
+        padding: 0;
+    }
+    .favorites-ammount {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        margin: 0 80px 0 0;
+        span {
+            font-weight: 500;
+        }
+    }
+    .favorites-filter {
+        font-size: 16px;
+        line-height: 100px;
+        color: #555;
+        padding: 0 52px 0 30px;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+        height: 100px;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+        &::after {
+            right: 33px;
+            top: 1px;
+            content: "\e874";
+            font-size: 10px;
+            color: $grey;
+            position: absolute;
+            font-family: 'Linearicons-Free';
+        }
+        .favorites-filter__drop-down {
+            z-index: 1;
+            width: 270px;
+            background-color: #fff;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+            padding: 27px 27px 17px;
+            position: absolute;
+            left: -1px;
+            top: 81px;
+            border-top: 1px solid $blue;
+            display: none;
+            ul {
+                position: relative;
+                li {
+                    font-size: 15px;
+                    line-height: 15px;
+                    color: #747b86;
+                    padding-bottom: 10px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 68px;
+                    top: -206px;
+                    border: 12px solid transparent;
+                    border-bottom: 13px solid $blue;
+                    height: 179px;
+                }
+            }
+            button {
+                text-align: left;
+                border: none;
+                outline: transparent;
+                background-color: #fff;
+                font-size: 15px;
+                line-height: 15px;
+                color: #747b86;
+                margin-bottom: 10px;
+                &:hover {
+                    color: $blue;
+                    cursor: pointer;
+                }
+                &:focus {
+                    color: $blue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .category-menu__select-box {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+.favorites {
+    background-color: #eff1f5;
+    padding: 80px 0px 120px;
+    &__item-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .pagination__list {
+        display: flex;
+        justify-content: center;
+    }
+    .new-products__item {
+        transition: all 0.3s;
+    }
+    .new-products__item.list {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        .new-products__item-image,
+        .new-products__item-image-hover {
+            width: 31%;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 4px;
+        }
+        .new-products__item-dscr {
+            width: 69%;
+            max-height: 230px;
+            padding-top: 20px;
+        }
+        .new-products__item-title {
+            margin-bottom: 15px;
+        }
+        .new-products__item-info {
+            margin-bottom: 15px;
+        }
+        .new-products__item-text {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+//end favorites page
+
+//start login
+
+.login {
+    background-color: $bg;
+    &__inner {
+        padding: 70px 0 120px;
+    }
+    &__up-box {
+        max-width: 555px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        text-align: center;
+        padding: 55px 48px 24px;
+        border-bottom: 1px solid #ececec;
+        &-title {
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: 400;
+            margin: 0;
+            color: #000;
+            margin-bottom: 28px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            margin: 0;
+        }
+        &-text.recover-password {
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            margin: 0;
+            text-align: left;
+        }
+    }
+    &__down-box {
+        max-width: 555px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-down-left-radius: 4px;
+        border-down-right-radius: 4px;
+        padding: 40px 50px 60px;
+        &-username,
+        &-password {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        &-input {
+            background-color: #f4f5f8;
+            height: 50px;
+            width: 100%;
+            border: none;
+            padding: 17px 20px;
+            margin-bottom: 30px;
+            &::placeholder {
+                color: #898f96;
+            }
+        }
+        &-checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        &-checkbox-text {
+            font-size: 16px;
+            line-height: 16px;
+            margin: 0 0 0 15px;
+            color: $grey;
+        }
+        &-btn {
+            width: 190px;
+            padding: 17px 0;
+            background-color: $blue;
+            color: #fff;
+            border-radius: 30px;
+            border: none;
+            font-size: 15px;
+            line-height: 15px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &-btn.recover-password {
+            margin-bottom: 0;
+        }
+        &-text {
+            display: flex;
+            justify-content: space-between;
+            color: #898f96;
+            font-size: 16px;
+            line-height: 16px;
+            a {
+                color: $blue;
+            }
+        }
+    }
+}
+
+//end login
+
+//start terms
+
+.terms {
+    background-color: $bg;
+    &__inner {
+        padding: 70px 0 120px;
+    }
+    &__box {
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding: 30px;
+        border-bottom: 1px solid #ececec;
+        &:first-child {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        &:last-child {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            padding-bottom: 40px;
+        }
+        &-title {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #000;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 400;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+//end terms
+
+//start 404
+
+.page-404 {
+    &__inner {
+        padding: 80px 0px 100px;
+        text-align: center;
+    }
+    &__text {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #000;
+        margin: 40px 0px;
+    }
+    &__btn {
+        color: #fff;
+        font-size: 15px;
+        line-height: 15px;
+        width: 190px;
+        padding: 18px 20px;
+        border-radius: 30px;
+        background-color: $blue;
+    }
+}
+
+//end 404
+  
