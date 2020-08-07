@@ -134,7 +134,18 @@ $(function(){
         $('.favorites-grid').addClass('current');
     });
 
+    $('.lnr-question-circle.one').on('click', function(){
+        $('.plan__item-cloud.cloud-one').toggle(),
+        $('.lnr-question-circle::after').toggle();
+    });
 
+    $('.lnr-question-circle.two').on('click', function(){
+        $('.plan__item-cloud.cloud-two').toggle();
+    });
+
+    $('.lnr-question-circle.three').on('click', function(){
+        $('.plan__item-cloud.cloud-three').toggle();
+    });
 
 });
 
