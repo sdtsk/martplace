@@ -147,6 +147,8 @@ $(function(){
         $('.plan__item-cloud.cloud-three').toggle();
     });
 
+    $('.search select').styler();
+
 });
 
 if ($('.favorites__item-box').length) {
